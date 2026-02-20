@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | Personal Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+
+  <a href="index.html" class="back-btn">← Back to Login</a>
+
+
+  <header class="navbar">
+    <div class="logo">John Client Dael Barral</div>
+    <nav>
+      <a href="#">Making</a>
+      <a href="#">My Dreams</a>
+      <a href="#">Possible</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>About Me</h1>
+      <p>
+I am a driven and passionate individual who is committed to achieving two dreams: becoming a successful web developer and growing as a dedicated basketball player. For me, these two passions are not separate—they both represent discipline, perseverance, and continuous improvement.
+
+On the court, basketball has taught me resilience, teamwork, focus, and the importance of pushing beyond limits. Every practice, every game, and every challenge strengthens my mindset and builds the determination I carry into every area of my life.
+
+In the world of technology, I am pursuing my dream of becoming a web developer. I dedicate myself to learning new programming skills, building projects, and constantly improving my craft. Just like in basketball, success in web development requires patience, strategy, and the willingness to keep going even after mistakes.
+
+Balancing these two passions is not always easy, but it fuels my ambition. Basketball sharpens my discipline; coding sharpens my creativity. Together, they shape me into someone who is hardworking, focused, and determined to succeed.
+
+I believe that with consistency, sacrifice, and belief in myself, I can achieve both my dreams—excelling on the court and building meaningful digital experiences as a web developer.
+
+    </div>
+    <div class="hero-image">
+      <img src=basketball_sportkunst_13.jpg>
+    </div>
+  </section>
+
+
+  <div class="container">
+
+
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('contact')">Contact</a>
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('help')">Help</a>
+      <a onclick="exitSystem()">Exit</a>
+    </div>
+
+    <div class="content">
+
+      <div id="home" class="page">
+        <h2>Person Information</h2>
+        <input id="fname" placeholder="First Name">
+        <input id="mname" placeholder="Middle Name">
+        <input id="lname" placeholder="Last Name">
+        <input id="age" type="number" placeholder="Age">
+        <input id="gmail" placeholder="Email">
+        <button id="saveBtn">Save 🔒</button>
+      </div>
+
+
+      <div id="contact" class="page hidden">
+        <h2>Contact</h2>
+        <p>facebook: https://www.facebook.com/gaverielle.salva.1</p>
+      </div>
+
+
+      <div id="about" class="page hidden">
+        <h2>About</h2>
+        <p>I dedicate myself each day to strengthening my programming abilities through consistent practice and hands-on experience. By taking on new challenges, learning different programming languages, and developing practical projects, I continuously expand my knowledge and refine my problem-solving skills. This steady effort not only enhances my technical competence but also encourages creativity and flexibility, allowing me to produce cleaner, more efficient code while keeping up with the latest advancements in technology. Through determination and continuous learning, I am gradually growing from a beginner into a skilled and confident developer.
+
+</p>
+      </div>
+
+
+      <div id="help" class="page hidden">
+        <h2>Help</h2>
+        <p>Enter your personal details in the required fields of the form. After clicking the “Save” button, the system will automatically record and show the information in the table below. This makes it simple to review and manage your submitted data in an organized and structured way.</p>
+      </div>
+    </div>
+
+
+    <div class="table-area">
+      <h2>Persons Data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>FIRST NAME</th>
+            <th>MIDDLE NAME</th>
+            <th>LAST NAME</th>
+            <th>AGE</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
